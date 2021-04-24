@@ -1,12 +1,12 @@
-import Head from 'next/head';
-import styles from '../styles/Home.module.css';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import '../src/fontawesome';
 
-export default function Home() {
+export default function Index() {
     return (
-        <div>
-            <div className='p-20 bg-grey-muted'>
-                <p>test</p>
-                <p>test</p>
+        <div className='bg-grey-muted'>
+            <div className='p-3'>
+                <FontAwesomeIcon icon={['far', 'acorn']} />
+                <FontAwesomeIcon icon={['far', 'plus']} />
             </div>
         </div>
     );
